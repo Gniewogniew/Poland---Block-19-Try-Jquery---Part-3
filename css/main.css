@@ -1,0 +1,93 @@
+body{
+  margin: 0 auto;
+  background: #ccd9ff;
+  font-family: Georgia;
+}
+.appToDo{
+  min-height: 400px;
+  width: 600px; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 20px;
+  border: 10px solid white; 
+  background: #668cff;
+  box-shadow: 0 15px 30px rgba(0,0,0,.65);
+}
+header {
+  padding: 10px;
+  text-align:center;
+  border-bottom: 8px solid white;
+  text-transform: uppercase;
+}
+.container {
+  position: relative;
+  padding: 30px;
+}
+#itemToDo{
+  width: 95%;
+  border: none;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 20px;
+}
+#addContent{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30px;
+  border: none;
+  border-radius: 10px;
+  padding: 13px;
+  font-size: 20px;
+  cursor:pointer;
+  background:#ffffff; 
+}
+#list {
+  margin: 0;
+  padding: 0 60px;
+  list-style-type: decimal-leading-zero;
+  font-size: 24px;
+  word-wrap: break-word;
+  max-width: 85%;
+}
+.item {
+  margin: 8px;
+  padding: 8px;
+}
+.done{
+  text-decoration: line-through;
+  font-style:italic;
+  color: #676767;
+}
+label input {
+  visibility: hidden;
+  display:block;
+  height:0;
+  width:0;
+  position:absolute;
+  overflow:hidden;
+}
+label span {
+  float: right;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #ffffff;
+  display: inline-block;
+  margin-top: 5px;
+}
+[type=checkbox]:checked + span {
+  background: #ff0000;
+}
+.remove{
+  float:right;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  padding: 6px;
+  font-size: 18px;
+  cursor: pointer;
+  background: #ffffff;
+  margin-left: 20px;
+}
