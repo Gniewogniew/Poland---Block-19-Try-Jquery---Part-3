@@ -51,8 +51,8 @@ header {
   margin-bottom: 50px;
 }
 .item {
-  margin: 8px;
-  padding: 8px;
+  margin: 10px;
+  padding: 14px;
 }
 .done{
   text-decoration: line-through;
