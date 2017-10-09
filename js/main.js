@@ -5,7 +5,7 @@ function main() {
     var savedList = $("#list");
 
     $(function() {
-        savedList.append("<li class=item>Kupić gazetę<label><input class=checkBox type=checkbox><span></span></label></li> <li class=item>Kupić gazetę<label><input class=checkBox type=checkbox><span></span></label></li><li class=item>Kupić gazetę<label><input class=checkBox type=checkbox><span></span></label></li><li class=item>Kupić gazetę<label><input class=checkBox type=checkbox><span></span></label></li>")
+        savedList.append("<li class=item>Kupić gazetę<label><input class=checkBox type=checkbox><span></span></label></li><li class=item>Zrobić pranie<label><input class=checkBox type=checkbox><span></span></label></li><li class=item>Wstawić zmywarkę<label><input class=checkBox type=checkbox><span></span></label></li>")
         if (localStorage.getItem("#list")) {
             savedList.html(localStorage.getItem("#list"));
         }
