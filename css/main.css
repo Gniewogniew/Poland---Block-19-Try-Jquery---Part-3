@@ -8,7 +8,7 @@ body{
   width: 600px;
   border-radius: 20px;
   border: 10px solid white;
-  background: #c3c5ea;
+  background: #668cff;
   box-shadow: 0 15px 30px rgba(0,0,0,.65);
   width: 60%;
   margin: 0px auto;
@@ -48,7 +48,7 @@ header {
   overflow-wrap: break-word;
   margin-right: 30px;
   margin-left: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .item {
   margin: 10px;
@@ -80,12 +80,22 @@ label span {
   cursor: pointer;
 }
 .remove{
-  float:right;
-  border: none;
   border-radius: 12px;
-  padding: 6px;
-  font-size: 19px;
+  padding: 11px;
+  font-size: 23px;
   cursor: pointer;
   background: #ffffff;
-  margin-left: 15px;
+  color: black;
+}
+footer{
+  border-top: 8px solid white;
+  text-align: center;
+  padding: 20px;
+}
+p {
+  float: left;
+  margin-left: 50px;
+  font-size: 22px;
+  width: 60%;
+  font-weight: bold;
 }
