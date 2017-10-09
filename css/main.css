@@ -25,7 +25,7 @@ header {
   border-bottom: 8px solid white;
 }
 #itemToDo{
-  width: 80%;
+  width: calc(100% - 250px);
   border: none;
   border-radius: 10px;
   padding: 14px;
@@ -38,7 +38,6 @@ header {
   font-size: 23px;
   cursor: pointer;
   background: #ffffff;
-  color: black; 
 }
 #list {
   list-style-type: decimal-leading-zero;
@@ -85,11 +84,10 @@ footer{
 }
 p {
   float: left;
-  margin-left: 50px;
   font-size: 22px;
-  width: 70%;
+  width: calc(100% - 250px);
   font-weight: bold;
-  margin-top: 15px;
+  line-height: 10%;
 }
 .remove{
   float: right;
@@ -98,6 +96,4 @@ p {
   font-size: 21px;
   cursor: pointer;
   background: #ffffff;
-  color: black;
-  margin-right: 10px;
 }
