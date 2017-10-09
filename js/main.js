@@ -1,16 +1,16 @@
 function main() {
-    $("#addContent").click(TypeTextClickButton);
+    $("#addContent").click(typeTextClickButton);
     $("#addContent").attr("disabled", true);
-    $("#itemToDo").keyup(TypeTextClickButton);
+    $("#itemToDo").keyup(typeTextClickButton);
     var savedList = $("#list");
 
-    $(document).ready(function() {
+    $(function() {
         if (localStorage.getItem("#list")) {
             savedList.html(localStorage.getItem("#list"));
         }
     });
 
-    function TypeTextClickButton() {
+    function typeTextClickButton() {
         if ($("#itemToDo").val() == "") {
             $("#addContent").attr("disabled", true);
             $(':input[value=""]').attr("disabled", "disabled");
@@ -33,14 +33,14 @@ function main() {
             localStorage.setItem("#list", savedList.html())
         }
         if ($(this).is("input:checkbox:not(:checked)")) {
-            $(this).closest("li").removeClass("done")
-            localStorage.setItem("#list", savedList.html())
+            $(this).closest("li").removeClass("done");
+            localStorage.setItem("#list", savedList.html());
         }
     });
 
     $(document).on('click', ".remove", function() {
         $('li.done').remove();
-        localStorage.setItem("#list", savedList.html())
+        localStorage.setItem("#list", savedList.html());
     });
 }
 $(main)
