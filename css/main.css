@@ -46,7 +46,9 @@ header {
   margin-right: 30px;
   margin-left: 30px;
   margin-bottom: 20px;
-  min-height: 400px;
+  height: 300px;
+  overflow:hidden; 
+  overflow-y:scroll;
 }
 .item {
   margin: 8px;
