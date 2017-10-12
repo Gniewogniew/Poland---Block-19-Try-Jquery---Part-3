@@ -5,8 +5,8 @@ function main() {
     function eventsHandlers() {
     $("#addContent").click(typeTextClickButton);
     $("#itemToDo").keyup(typeTextClickButton);
-    $(savedList).on("click", ".checkBox",selectFinishedTask)
-    $(".remove").on("click", removeFinishedTask)
+    $(savedList).on("click", ".checkBox",selectFinishedTask);
+    $(".remove").on("click", removeFinishedTask);
     }
     
     $(function() {
@@ -26,10 +26,10 @@ function main() {
             $("#addContent").attr("disabled", false);
         }
         if (event.which == 13 || event.button == 0) {
-            $(addItemsOnList)
+            $(addItemsOnList);
         }
     }
-    function addItemsOnList(){ 
+    function addItemsOnList() { 
         savedList.append("<li class=item>" + $("#itemToDo").val() + "<label><input class=checkBox type=checkbox><span></span></label>" + "</li>");
             $("#itemToDo").val("");
             localStorage.setItem("#list", savedList.html());
@@ -51,6 +51,6 @@ function main() {
         $("li.done").remove();
         localStorage.setItem("#list", savedList.html());
     }
-$(eventsHandlers)
+$(eventsHandlers);
 }
 $(main)
