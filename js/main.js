@@ -1,4 +1,5 @@
 function main() {
+    $(addingButton).attr("disabled", true);
     $(eventsHandlers);
 }
 
@@ -6,7 +7,6 @@ $(main);
 var savedList = $("#list");
 var addingButton = $("#addContent");
 var inputForItemsToDo = $("#itemToDo");
-$(addingButton).attr("disabled", true);
 
 function eventsHandlers() {
     $("#addContent").click(typeTextClickButton);
